@@ -7,56 +7,60 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Lumiere Online E-Commerce Shopo</title>
+        <title>Lumi&egrave;re Online E-Commerce Shopo</title>
+        <!--Stops mobile from faking its size-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css/normalizer.css"/>
         <link rel="stylesheet" type="text/css" href="css/myCSS.css"/>
-        
+        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet"> 
         
     </head>
     <body>
-<!--========================================================================================================================================
-                                                            HOME SECTION END
-=========================================================================================================================================-->
-        <section>
+        <section id="shome" class="homeBgImage">
             <header>
-                <div>
-                    <img src="img/trainerHomePage.jpg" alt="The Lumiere background image" />
-                </div>
                 
-                <div>
-                    <img src="img/logo.png" alt="The Lumiere logo" />
+                <div id="logo" class="logoC">
+                    <img src="img/logo.png" alt="The Lumiere logo" class="logoI" />
                 </div>
 <!--========================================================================================================================================
                                                         NAVIGATION SECTION
 =========================================================================================================================================-->
-                <div>
+                <div class="navC">
+                    <span class="navBtn">&#9776;</span>
                     <nav>
-                    <ul>
+                    <ul id="mainMenu" class="menu-items">
                         <li><a href="#home">Home</a></li>                        
                         <li><a href="#products">Products</a></li>                        
                         <li><a href="#sales">Sales</a></li>                        
                         <li><a href="#about">About</a></li>                        
                         <li><a href="#contact">Contact</a></li>                        
-                        <li><a href="#view cart"><i>Basket icon goes here...</i>View Cart</a></li>                        
+                        <li class="viewCart"><a href="#view cart"><i>Basket icon goes here...</i>View Cart</a></li>                        
                     </ul>
                     </nav>
                 </div> 
+            </header>
 <!--========================================================================================================================================
                                                         NAVIGATION SECTION END
 =========================================================================================================================================-->
-            <div>
-                Exclusive <br> Trainers
+<!--========================================================================================================================================
+                                                            HOME SECTION
+=========================================================================================================================================-->
+            <a name="home"></a>
+            <div id="eTrainers">
+                Exclusive <br>      Trainers
             </div>
-            <div>
+            <div id="lEdition">
                 Limited Edition
             </div>
-            <div>
+                <br>
+            <div id="nArrivals">
                 <a href="#products"><button>NEW ARRIVALS</button></a>
             </div>
-            <div>
+            <div id="hIcon">
                 <i>Hand icon goes here...</i>    
             </div>
             
-            </header>
+            
         
         
         </section>
@@ -67,6 +71,7 @@
                                                             PRODUCT SECTION 
 =========================================================================================================================================-->
         <section>
+            <a name="products"></a>
             <h1><strong>PRODUCTS</strong></h1>
         <p>All the best and unique trainer collection at exclusive <strong>PRICES</strong></p>
         <div>
@@ -140,6 +145,7 @@
                                                             SALES SECTION 
 =========================================================================================================================================-->
         <section>
+             <a name="sales"></a>
             <h1><strong>SALES</strong></h1>
             <p>Take advantage of our sales and get up to 50% DISCOUNT!</p>
             <div>
@@ -186,10 +192,10 @@
             <div>
                 <fieldset>
                     <p><strong>PREMIER DELIVERY</strong>UNLIMITED NEXT-DAY DELIVERY AND CLICK & COLLECT FOR £9.95 A YEAR.</p>
-                    <span>
+                    <form>
                         Username:<input type="text" name="username" value="Enter your username here">
                         Password:<input type="text" name="password" value="Enter your password here">
-                    </span>
+                    </form>
                     
                     <br>
                     
@@ -205,8 +211,9 @@
 =========================================================================================================================================-->
 <!--========================================================================================================================================
                                                             ABOUT SECTION
-=========================================================================================================================================-->          
+=========================================================================================================================================-->     
         <section>
+             <a name="about"></a>
             <h1>
                 ABOUT
             </h1>
@@ -217,10 +224,88 @@
                 </p>
             </div>  
             <div>
-                <video src="" alt=""/>
+               <video width="640" heigh="640" controls>
+                    <source src="video/trainers1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         
         </section>    
+ <!--=======================================================================================================================================
+                                                            ABOUT SECTION END
+=========================================================================================================================================--> 
+<!--========================================================================================================================================
+                                                            Contact section
+=========================================================================================================================================--> 
+         <div>
+            <section>
+                 <a name="contact"></a>
+                <div>
+
+                    <h1>CONTACT</h1>
+
+                    <p>Get in touch with us via our contact form, email or phone number.</p>
+
+                    <div>
+                        <h3>Main Office</h3>
+                        <div>
+                        <address>Reset Your Mind 360<br>2nd Floor<br>St. Clare House<br>30-33 Minories<br>London EC3N 1DD</address><br>
+                        <a href="tel:02084883444"><i>Phone icon goes here...</i> 0208 488 3444</a><br>
+                        <a href="mailto:info@lumiere.com"><i>Email icon goes here...</i> Email us</a>
+                        </div>
+                    </div>
+
+                    <aside>
+
+                        <div>
+                            <form>
+                                <div>
+                                    <div>
+                                        <label>Name</label><br>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label>Email</label><br>
+                                        <input type="email">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label>Message</label><br>
+                                        <textarea rows="3" cols="" maxlength="999" style="resize:none"></textarea>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button type="submit">SEND MESSAGE</button>
+                                </div>
+                            </form>
+                            </div>   
+                    </aside>
+                </div> 
+            </section>
+
+            <div>The map goes here now...</div>    
+        </div>
+    
+<!--========================================================================================================================================
+                                                        CONTACT SECTION END
+=========================================================================================================================================--> <!--========================================================================================================================================
+                                                            FOOTER
+=========================================================================================================================================-->         
+        <footer>
+            <div>
+                <a href="#"><i>LinkedIn icon goes here...</i></a>&nbsp;&nbsp;<a href="#"><i>Twitter icon goes here...</i></a>&nbsp;&nbsp;<a href="#"><i>Facebook icon goes here...</i></a>&nbsp;&nbsp;<a href="#"><i>Instagram icon goes here...</i></a>
+            </div>
+            <div>
+                <span>&copy; 2017 lumi&egrave;re</span>
+            </div> 
+        </footer>
+<!--========================================================================================================================================
+                                                            FOOTER END
+=========================================================================================================================================-->         
         
         
         <script src="js/myJS.js"></script>        

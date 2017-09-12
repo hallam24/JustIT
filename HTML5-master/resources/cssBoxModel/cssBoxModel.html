@@ -13,6 +13,7 @@
                 width: 100%;
                 height: auto;
                 padding-bottom: 5%;
+                /*Stop whitespace and overflowing content*/
                 overflow: hidden;
             }
             .leftC {
@@ -27,12 +28,22 @@
             }
             .rightC {
                 background-color: brown;
-                width: 70%;
+                width: 65%;
                 height: 200px;
                 float: right;
                 padding-left: 2%;
                 /*margin: 10%;*/
                 border: 5px solid blue;
+                -webkit-box-sizing: border-box;
+            }
+            footer{
+                background-color: aqua;
+                width: 100%;
+                height: 100px;
+                padding-left: 2%;
+                border: 5px solid blue;
+                /*Tells section to ignore css and follow html layout, puts footer at bottom in this case*/
+                clear: both;
                 -webkit-box-sizing: border-box;
             }
         
@@ -47,7 +58,13 @@
             <div class="rightC">
                 <h1>This is the right container</h1>
             </div>
+            <footer>
+                <h1>
+                    Footer yo
+                </h1>
+            </footer>
         </div>
+        
     
         
     </body>

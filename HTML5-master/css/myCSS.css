@@ -1,0 +1,256 @@
+/*-------------------------------------------------------------------------------------------------------------------------------------------
+                                                LUMIERE FICTIONAL WEBSITE CSS STYLE FILE
+
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                        WEBSITE COLOUR SCHEME
+
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*
+First colour: rgba(195, 168, 225, 1);
+Second colour: rgba(44, 31, 61 ,1);
+Third colour: rgba(55, 42, 11, 1);
+Fourth colour: #4444;
+
+
+
+
+
+
+*/
+/*------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                GLOBAL STYLES
+
+------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Prevent adjustment of font size after orientations change in IE on Windows phone and in IOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* Apply a natural box model to all elements */
+*{
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img, video {
+    width: 100%;
+}
+
+body{
+    font-family: 'Ek Mukta', sans-serif;
+    /*font-size: 75%;*/
+    font-size: 16px;
+    color: #4444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 100px auto 100px auto;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                HOME STYLES
+
+------------------------------------------------------------------------------------------------------------------------------------------*/
+.homeBgImage{
+    background: url('../img/trainerHomePage.jpg');
+    background-repeat:no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-bottom: 15px solid rgba(53, 38, 88, 0.8);
+    background-attachment: fixed;
+}
+
+.logoC{
+    width: 45px;
+    top 3px;
+    left: 10px;
+    position: absolute;
+    z-index: 110;
+}
+
+.navC{
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: rgba(44, 31, 61, 1);
+    position: fixed;
+    border-bottom: 2px solid rgba(194, 166, 255, 0.2);
+    z-index: 100;
+}
+
+ul.menu-items{
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li a, nav li{
+    color: white;
+    opacity: 1;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    float: none; 
+    display: block;
+    outline-style: none;
+    text-decoration: none;
+}
+
+.navBtn{
+    font-size: 2.5em;
+    display: block;
+    width: 20%;
+    margin: 0 4vw 0 73vw;
+    padding: 7px 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-items a{
+    padding: 15px 5vw 15px 0;
+    color: white;
+    text-align: center;
+}
+
+.menu-items li{
+    border-top: 3px solid rgba(194, 166, 255, 0.2);
+}
+
+
+/*header{
+   /* margin: auto;
+    border: 2px;
+    border-color: blueviolet;
+    clear: both;
+}
+section{
+    height: 800px;
+}
+#shome{
+    clear:both;
+    margin: 1px;
+}
+#logo{
+    float:left;
+    top: 60px;
+    position: absolute;
+}
+nav{
+    width: 100%;
+    list-style-type: none;
+    float: right;
+    text-align: right;
+    border: 1px solid purple;
+    background-color: blueviolet;
+}
+li{
+    display: inline;
+    font-size: 20px;
+    margin: 15px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    
+}
+#eTrainers{
+    float: right;
+    right: 10px;
+    bottom: 100px;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+}
+#lEdition{
+    float:left;
+    left: 25px;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    bottom: 75px;
+}
+#nArrivals{
+    float:left;
+    left: 25px;
+    bottom:50px;
+    position: absolute;
+}
+#hIcon{
+    float: left;
+    left: 150px;
+    bottom: 50px;
+    position: absolute;
+}*/
+
+h1{
+    color: blueviolet;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                MOBILE STYLES - 568px SCREEN RESOLUTION
+
+------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 568px){
+    h1{
+        color: red;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                MOBILE STYLES - 768px SCREEN RESOLUTION
+
+------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px){
+    h1{
+        color: blue;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                MOBILE STYLES - 1024px SCREEN RESOLUTION
+
+------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px){
+    h1{
+        color: orange;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                MOBILE STYLES - 1280px SCREEN RESOLUTION
+
+------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1280px){
+    h1{
+        color: fuchsia;
+    }
+}
+
+
+
+
+
+
